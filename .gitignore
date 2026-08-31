@@ -1,0 +1,23 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Cache de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Modelos entrenados (archivos grandes)
+models/
+*.joblib
+*.pkl
+
+# Archivos del sistema
+.DS_Store
+
+# Configuración local del editor
+.vscode/

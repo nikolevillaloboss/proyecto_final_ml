@@ -19,7 +19,10 @@ proyecto_final_ml/
 │   ├── 01_EDA_faltantes_outliers.ipynb
 │   ├── 02_preprocesado_seleccion_variables.ipynb
 │   ├── 03_regresion_logistica.ipynb
-│   └── 04_random_forest.ipynb
+│   ├── 04_random_forest.ipynb
+│   ├── 05_perceptron.ipynb
+│   ├── 06_arbol.ipynb
+│   └── 07_knn.ipynb
 │
 ├── models/
 │
@@ -104,7 +107,37 @@ Incluye:
 
 `04_random_forest.ipynb`
 
-Utiliza una estructura equivalente a la Regresión Logística para entrenar y evaluar un modelo `RandomForestClassifier`, permitiendo comparar ambos enfoques.
+Entrena y evalúa un modelo `RandomForestClassifier` sobre `datos_finales.csv`
+(datos ya preprocesados, con tratamiento de outliers). Utiliza una estructura
+equivalente al Árbol de Decisión (división 70/15/15, modelo base, ajuste de
+hiperparámetros, comparación en validación, evaluación final en prueba, matriz
+de confusión e importancia de variables), lo que permite comparar los distintos
+enfoques del proyecto de forma justa.
+
+### 05 — Perceptrón multicapa
+
+`05_perceptron.ipynb`
+
+Entrena y evalúa un perceptrón multicapa (MLP) como modelo no lineal,
+analizando el efecto de la arquitectura y la regularización sobre el desempeño.
+
+### 06 — Árbol de Decisión
+
+`06_arbol.ipynb`
+
+Entrena y evalúa un `DecisionTreeClassifier` con división 70/15/15, estudio de
+hiperparámetros (profundidad y mínimo de observaciones por hoja), comparación en
+validación y evaluación final en prueba.
+
+### 07 — K-Vecinos más Cercanos (KNN)
+
+`07_knn.ipynb`
+
+Entrena y evalúa un modelo `KNeighborsClassifier` sobre `datos_finales.csv`,
+siguiendo la misma estructura que los demás modelos. Estudia el efecto del
+número de vecinos (`n_neighbors`) y de la ponderación (`weights`) sobre el
+desempeño. El escalado previo de las variables es indispensable para KNN, ya
+que el algoritmo se basa en distancias entre observaciones.
 
 ---
 
